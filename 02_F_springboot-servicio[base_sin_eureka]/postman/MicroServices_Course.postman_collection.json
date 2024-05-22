@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "40da31e3-7220-4bc8-a9b3-d72ae5177578",
+		"name": "MicroServices_Course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33441179"
+	},
+	"item": [
+		{
+			"name": "ProductMicServ",
+			"item": [
+				{
+					"name": "GetAllProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/ver/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"ver",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ItemMicServ",
+			"item": [
+				{
+					"name": "GetAllItems",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8002/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetItemById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8002/ver/2/cantidad/9",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"ver",
+								"2",
+								"cantidad",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
