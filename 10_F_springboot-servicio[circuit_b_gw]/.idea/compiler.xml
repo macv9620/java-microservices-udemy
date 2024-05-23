@@ -8,12 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-servicio-item" />
         <module name="springboot-servicio-productos" />
+        <module name="springboot-servicio-eureka-server" />
         <module name="springboot-servicio-gateway-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="springboot-servicio-eureka-server" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
