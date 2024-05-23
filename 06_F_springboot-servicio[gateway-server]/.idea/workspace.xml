@@ -4,38 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a624453-2e0d-4763-b75d-b4090a3c1007" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/src/main/java/com/formacionbdi/springboot/app/gateway/SpringbootServicioGatewayServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/src/main/java/com/formacionbdi/springboot/app/gateway/filters/EjemploGlobalFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/src/main/java/com/formacionbdi/springboot/app/gateway/filters/factory/EjemploGatewayFilterFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-gateway-server/src/test/java/com/formacionbdi/springboot/app/gateway/SpringbootServicioGatewayServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/AppConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/SpringbootServicioItemApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/clientes/ProductoClienteRest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/controllers/ItemController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/models/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/models/Producto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/models/service/ItemService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/models/service/ItemServiceFeign.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/models/service/ItemServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_1_springboot-servicio[gateway-server]/springboot-servicio-item/src/test/java/com/formacionbdi/springboot/app/item/SpringbootServicioItemApplicationTests.java" beforeDir="false" />
+    <list default="true" id="f83779f4-5917-4faa-9847-b05aa0c5d993" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-servicio-gateway-server/src/main/java/com/formacionbdi/springboot/app/gateway/filters/EjemploGlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-servicio-gateway-server/src/main/java/com/formacionbdi/springboot/app/gateway/filters/EjemploGlobalFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-servicio-gateway-server/src/main/java/com/formacionbdi/springboot/app/gateway/filters/factory/EjemploGatewayFilterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-servicio-gateway-server/src/main/java/com/formacionbdi/springboot/app/gateway/filters/factory/EjemploGatewayFilterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-servicio-gateway-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-servicio-gateway-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-servicio-item/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-servicio-item/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/clientes/ProductoClienteRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/clientes/ProductoClienteRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/controllers/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/controllers/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-servicio-item/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-servicio-item/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +25,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "contexts": [
+    {
+      "name": "docker-desktop"
+    }
+  ],
+  "isMigrated": true
+}]]></component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="docker-desktop" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -52,22 +43,52 @@
   "customColor": "",
   "associatedIndex": 5
 }]]></component>
-  <component name="ProjectId" id="2grzSImXYirA5HCbN32ICYfENjg" />
+  <component name="ProjectId" id="2gsAA42EAyb3b0AzK4JDi9lqpxr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.SpringbootServicioEurekaServerApplication.executor": "Run",
+    "Spring Boot.SpringbootServicioGatewayServerApplication.executor": "Run",
+    "Spring Boot.SpringbootServicioItemApplication.executor": "Run",
+    "Spring Boot.SpringbootServicioProductosApplication.executor": "Run",
     "git-widget-placeholder": "S4",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.SpringbootServicioItemApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootServicioProductosApplication">
+    <configuration name="SpringbootServicioEurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.eureka.SpringbootServicioEurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringbootServicioGatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="springboot-servicio-gateway-server" />
@@ -84,6 +105,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringbootServicioProductosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-productos" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.productos.SpringbootServicioProductosApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SpringbootServicioEurekaServerApplication" />
+      <item itemvalue="Spring Boot.SpringbootServicioGatewayServerApplication" />
+      <item itemvalue="Spring Boot.SpringbootServicioItemApplication" />
+      <item itemvalue="Spring Boot.SpringbootServicioProductosApplication" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -95,12 +130,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4a624453-2e0d-4763-b75d-b4090a3c1007" name="Changes" comment="" />
-      <created>1716470484672</created>
+      <changelist id="f83779f4-5917-4faa-9847-b05aa0c5d993" name="Changes" comment="" />
+      <created>1716475766084</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716470484672</updated>
-      <workItem from="1716470486290" duration="135000" />
+      <updated>1716475766084</updated>
+      <workItem from="1716475769070" duration="8128000" />
     </task>
     <servers />
   </component>

@@ -7,14 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-servicio-item" />
+        <module name="springboot-servicio-productos" />
+        <module name="springboot-servicio-eureka-server" />
         <module name="springboot-servicio-gateway-server" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-servicio-eureka-server" options="-parameters" />
       <module name="springboot-servicio-gateway-server" options="-parameters" />
       <module name="springboot-servicio-item" options="-parameters" />
+      <module name="springboot-servicio-productos" options="-parameters" />
     </option>
   </component>
 </project>

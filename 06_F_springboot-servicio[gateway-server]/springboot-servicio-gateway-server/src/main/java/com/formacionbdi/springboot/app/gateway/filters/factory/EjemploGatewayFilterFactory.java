@@ -14,12 +14,13 @@ import org.springframework.stereotype.Component;
 
 import reactor.core.publisher.Mono;
 
+
 @Component
 public class EjemploGatewayFilterFactory extends AbstractGatewayFilterFactory<EjemploGatewayFilterFactory.Configuracion>{
 
 	private final Logger logger = LoggerFactory.getLogger(EjemploGatewayFilterFactory.class);
-	
-	
+
+
 	public EjemploGatewayFilterFactory() {
 		super(Configuracion.class);
 	}
@@ -27,20 +28,20 @@ public class EjemploGatewayFilterFactory extends AbstractGatewayFilterFactory<Ej
 	@Override
 	public GatewayFilter apply(Configuracion config) {
 		return (exchange, chain) -> {
-	
+
 			logger.info("ejecutando pre gateway filter factory: " + config.mensaje);
 			return chain.filter(exchange).then(Mono.fromRunnable(() -> {
-				
+
 				Optional.ofNullable(config.cookieValor).ifPresent(cookie -> {
 					exchange.getResponse().addCookie(ResponseCookie.from(config.cookieNombre, cookie).build());
 				});
-				
+
 				logger.info("ejecutando post gateway filter factory: " + config.mensaje);
-				
+
 			}));
 		};
 	}
-	
+
 
 	@Override
 	public String name() {
@@ -75,8 +76,8 @@ public class EjemploGatewayFilterFactory extends AbstractGatewayFilterFactory<Ej
 		public void setCookieNombre(String cookieNombre) {
 			this.cookieNombre = cookieNombre;
 		}
-		
-		
+
+
 	}
 
 }

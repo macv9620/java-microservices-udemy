@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.formacionbdi.springboot.app.item.models.Item;
@@ -23,9 +21,7 @@ public class ItemController {
 	private ItemService itemService;
 	
 	@GetMapping("/listar")
-	public List<Item> listar(@RequestParam(name="nombre", required= false) String nombre, @RequestHeader(name="token-request", required = false) String token){
-		System.out.println(nombre);
-		System.out.println(token);
+	public List<Item> listar(){
 		return itemService.findAll();
 	}
 	
@@ -41,7 +37,7 @@ public class ItemController {
 		
 		item.setCantidad(cantidad);
 		producto.setId(id);
-		producto.setNombre("Camara Sony");
+		producto.setNombre("Error controlado con Hystrix");
 		producto.setPrecio(500.00);
 		item.setProducto(producto);
 		return item;

@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springboot-servicio-item/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-servicio-productos/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-servicio-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-servicio-gateway-server/pom.xml" />
       </list>
     </option>
