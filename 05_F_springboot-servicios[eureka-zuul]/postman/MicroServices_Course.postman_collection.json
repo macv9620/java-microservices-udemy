@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "40da31e3-7220-4bc8-a9b3-d72ae5177578",
+		"name": "MicroServices_Course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33441179"
+	},
+	"item": [
+		{
+			"name": "ProductMicServ",
+			"item": [
+				{
+					"name": "GetAllProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllProductsZuul",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/productos/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"productos",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/ver/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"ver",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductByIdZuul",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/productos/ver/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"productos",
+								"ver",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ItemMicServ",
+			"item": [
+				{
+					"name": "GetAllItems",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8002/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllItemsZuul",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/items/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"items",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetItemById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8002/ver/2/cantidad/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"ver",
+								"2",
+								"cantidad",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetItemByIdZuul",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/items/ver/2/cantidad/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"items",
+								"ver",
+								"2",
+								"cantidad",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
