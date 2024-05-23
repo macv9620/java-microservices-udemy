@@ -17,11 +17,16 @@ public class PreTiempoTranscurridoFilter extends ZuulFilter{
 
 	@Override
 	public boolean shouldFilter() {
+		//Determina si se ejecuta o no el método run
+		//Se puede definir lógica para determinar si se ejecuta o no
+		//En este caso se setea true para que siempre se ejecute
 		return true;
 	}
 
 	@Override
 	public Object run() throws ZuulException {
+
+		//En este método se resuelve la lógica del filtro
 
 		RequestContext ctx = RequestContext.getCurrentContext();
 		HttpServletRequest request = ctx.getRequest();
@@ -36,11 +41,14 @@ public class PreTiempoTranscurridoFilter extends ZuulFilter{
 
 	@Override
 	public String filterType() {
+		//Tipo de filtro a implementar en este caso pre
+		//Estos valores ya vienen establecidos
 		return "pre";
 	}
 
 	@Override
 	public int filterOrder() {
+		//Orden de ejecución en caso se tener varios pre
 		return 1;
 	}
 
