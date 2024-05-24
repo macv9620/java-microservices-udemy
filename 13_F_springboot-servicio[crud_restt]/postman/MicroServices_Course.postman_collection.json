@@ -1,0 +1,687 @@
+{
+	"info": {
+		"_postman_id": "40da31e3-7220-4bc8-a9b3-d72ae5177578",
+		"name": "MicroServices_Course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33441179"
+	},
+	"item": [
+		{
+			"name": "ProductMicServ",
+			"item": [
+				{
+					"name": "GetAllProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:{{productMicroServPort}}/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "{{productMicroServPort}}",
+							"path": [
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllProductsZuulSpringGW",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:{{gatewayPort}}/api/productos/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "{{gatewayPort}}",
+							"path": [
+								"api",
+								"productos",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:{{productMicroServPort}}/ver/1",
+							"host": [
+								"localhost"
+							],
+							"port": "{{productMicroServPort}}",
+							"path": [
+								"ver",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductByIdZuulSpringGW",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:{{gatewayPort}}/api/productos/ver/1",
+							"host": [
+								"localhost"
+							],
+							"port": "{{gatewayPort}}",
+							"path": [
+								"api",
+								"productos",
+								"ver",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevo producto 1\",\r\n    \"precio\": 2069,\r\n    \"createAt\": \"2024-05-17\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{productMicroServPort}}/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "{{productMicroServPort}}",
+							"path": [
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateProductZuulSpringGW",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevo producto 2\",\r\n    \"precio\": 2069,\r\n    \"createAt\": \"2024-05-17\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{gatewayPort}}/api/productos/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "{{gatewayPort}}",
+							"path": [
+								"api",
+								"productos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditProduct",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevo producto Editado\",\r\n    \"precio\": 9000,\r\n    \"createAt\": \"2024-05-17\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{productMicroServPort}}/editar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "{{productMicroServPort}}",
+							"path": [
+								"editar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditProductZuulSpirngGW",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevo producto Editado\",\r\n    \"precio\": 9000,\r\n    \"createAt\": \"2024-05-17\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{gatewayPort}}/api/productos/editar/2",
+							"host": [
+								"localhost"
+							],
+							"port": "{{gatewayPort}}",
+							"path": [
+								"api",
+								"productos",
+								"editar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProduct",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{productMicroServPort}}/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "{{productMicroServPort}}",
+							"path": [
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProductZuulSpirngGW",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{gatewayPort}}/api/productos/eliminar/2",
+							"host": [
+								"localhost"
+							],
+							"port": "{{gatewayPort}}",
+							"path": [
+								"api",
+								"productos",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ItemMicServ",
+			"item": [
+				{
+					"name": "GetAllItems",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:{{itemsMicroServPort}}/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "{{itemsMicroServPort}}",
+							"path": [
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllItemsZuulSpringGW",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:{{gatewayPort}}/api/items/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "{{gatewayPort}}",
+							"path": [
+								"api",
+								"items",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetItemById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:{{itemsMicroServPort}}/ver/2/cantidad/7",
+							"host": [
+								"localhost"
+							],
+							"port": "{{itemsMicroServPort}}",
+							"path": [
+								"ver",
+								"2",
+								"cantidad",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetItemByIdZuulSpringGW",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:{{gatewayPort}}/api/items/ver/1/cantidad/10",
+							"host": [
+								"localhost"
+							],
+							"port": "{{gatewayPort}}",
+							"path": [
+								"api",
+								"items",
+								"ver",
+								"1",
+								"cantidad",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateItem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevo producto item 2\",\r\n    \"precio\": 2069,\r\n    \"createAt\": \"2024-05-17\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{itemsMicroServPort}}/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "{{itemsMicroServPort}}",
+							"path": [
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateItemZuulSpringGW",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevo producto item GW 2\",\r\n    \"precio\": 2069,\r\n    \"createAt\": \"2024-05-17\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{gatewayPort}}/api/items/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "{{gatewayPort}}",
+							"path": [
+								"api",
+								"items",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditItem",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevo producto Editado item\",\r\n    \"precio\": 9000,\r\n    \"createAt\": \"2024-05-17\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{itemsMicroServPort}}/editar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "{{itemsMicroServPort}}",
+							"path": [
+								"editar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditItemZuulSpringGW",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevo producto Editado item\",\r\n    \"precio\": 9000,\r\n    \"createAt\": \"2024-05-17\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{gatewayPort}}/api/items/editar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "{{gatewayPort}}",
+							"path": [
+								"api",
+								"items",
+								"editar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteItem",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{itemsMicroServPort}}/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "{{itemsMicroServPort}}",
+							"path": [
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteItemZuulSpringGW",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:{{gatewayPort}}/api/items/eliminar/2",
+							"host": [
+								"localhost"
+							],
+							"port": "{{gatewayPort}}",
+							"path": [
+								"api",
+								"items",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Config-server",
+			"item": [
+				{
+					"name": "Items",
+					"item": [
+						{
+							"name": "GetConfigsDev",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8888/servicio-items/dev",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"servicio-items",
+										"dev"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetConfigsProd",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8888/servicio-items/prod",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"servicio-items",
+										"prod"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetConfigsDefault",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8888/servicio-items/default",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"servicio-items",
+										"default"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetValuesConfig",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8007/obtener-config",
+									"host": [
+										"localhost"
+									],
+									"port": "8007",
+									"path": [
+										"obtener-config"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetValuesConfigZuulSpringGW",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8090/api/items/obtener-config",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"items",
+										"obtener-config"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ActuatorRefresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8007/actuator/refresh",
+							"host": [
+								"localhost"
+							],
+							"port": "8007",
+							"path": [
+								"actuator",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "productMicroServPort",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "itemsMicroServPort",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "gatewayPort",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
