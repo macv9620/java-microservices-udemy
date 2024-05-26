@@ -18,17 +18,14 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Autowired
 	private AuthenticationEventPublisher eventPublisher;
-	
-	@Bean
-	public BCryptPasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
 
 	@Override
 	@Autowired
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.userDetailsService(this.usuarioService).passwordEncoder(passwordEncoder())
-		.and().authenticationEventPublisher(eventPublisher);
+		auth.userDetailsService(this.usuarioService)
+				.passwordEncoder(passwordEncoder())
+		.and()
+				.authenticationEventPublisher(eventPublisher);
 	}
 
 	@Override
@@ -36,8 +33,10 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter{
 	protected AuthenticationManager authenticationManager() throws Exception {
 		return super.authenticationManager();
 	}
-	
-	
-	
 
+	//Si falla voler el método estático static
+	@Bean
+	public BCryptPasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
 }
