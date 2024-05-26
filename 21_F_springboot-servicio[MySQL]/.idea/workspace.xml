@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c47a9036-a571-40cc-95c4-a0ebf8684cd9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/config/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/config/servicio-items-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/config/servicio-items-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/config/servicio-items.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/config/servicio-productos-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/src/main/java/com/formacionbdi/springboot/app/productos/SpringbootServicioProductosApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/src/main/java/com/formacionbdi/springboot/app/productos/controllers/ProductoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/src/main/java/com/formacionbdi/springboot/app/productos/models/dao/ProductoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/src/main/java/com/formacionbdi/springboot/app/productos/models/service/IProductoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/src/main/java/com/formacionbdi/springboot/app/productos/models/service/ProductoServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/src/main/resources/bootstrap.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/src/main/resources/import.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../21_springboot-servicio[MySQL]/springboot-servicio-productos/src/test/java/com/formacionbdi/springboot/app/productos/SpringbootServicioProductosApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "contexts": [
+    {
+      "name": "docker-desktop"
+    }
+  ],
+  "isMigrated": true
+}]]></component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="docker-desktop" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2h0i0LhvSvHGdlNE6FbphsR2aC5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "S11",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootServicioOauthApplication">
+    <configuration name="SpringbootServicioConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.config.SpringbootServicioConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioEurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.eureka.SpringbootServicioEurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioGatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-gateway-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.gateway.SpringbootServicioGatewayServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioOauthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-oauth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.oauth.SpringbootServicioOauthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioProductosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-productos" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.productos.SpringbootServicioProductosApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioUsuariosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-usuarios" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.usuarios.SpringbootServicioUsuariosApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioZuulServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-zuul-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.zuul.SpringbootServicioZuulServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c47a9036-a571-40cc-95c4-a0ebf8684cd9" name="Changes" comment="" />
+      <created>1716737172532</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716737172532</updated>
+      <workItem from="1716737178881" duration="140000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
