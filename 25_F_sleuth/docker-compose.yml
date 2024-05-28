@@ -1,0 +1,85 @@
+version: '3.8'
+
+services:
+  mysql_zipkin_log_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: zipkin_db_container
+    environment:
+      MYSQL_ROOT_PASSWORD: S3cureR00tP@ssw0rd!
+      MYSQL_DATABASE: zipkin_log_db
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: S3cureUs3rP@ssw0rd!
+    ports:
+      - "3308:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  rabbitmq_server_service:
+    image: rabbitmq:3.13-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    container_name: rabbitmq_server_container
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    depends_on:
+      mysql_zipkin_log_service:
+        condition: service_healthy
+
+  zipkin_server_service:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    container_name: zipkin_server_container
+    restart: always
+    environment:
+      - RABBIT_ADDRESSES=rabbitmq_server_service
+      - STORAGE_TYPE=mysql
+      - MYSQL_DB=zipkin_log_db
+      - MYSQL_USER=user1
+      - MYSQL_PASS=S3cureUs3rP@ssw0rd!
+      - MYSQL_HOST=mysql_zipkin_log_service
+      - MYSQL_TCP_PORT=3306
+#      - MYSQL_JDBC_URL=jdbc:mariadb://mysql_zipkin_log_service:3306/zipkin_log_db?allowPublicKeyRetrieval=true&useSSL=false
+    depends_on:
+      rabbitmq_server_service:
+        condition: service_healthy
+      mysql_zipkin_log_service:
+        condition: service_healthy
+
+  postgres_users_service:
+    image: postgres:latest
+    container_name: users_db_container
+    environment:
+      POSTGRES_DB: users_db
+      POSTGRES_USER: user1
+      POSTGRES_PASSWORD: S3cureUs3rP@ssw0rd!
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  mysql_products_service:
+    image: mysql:latest
+    container_name: products_db_container
+    environment:
+      MYSQL_ROOT_PASSWORD: S3cureR00tP@ssw0rd!
+      MYSQL_DATABASE: products_db
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: S3cureUs3rP@ssw0rd!
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  postgres_data:
+  mysql_data:
