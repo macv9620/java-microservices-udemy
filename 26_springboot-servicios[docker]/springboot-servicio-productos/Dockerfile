@@ -1,4 +1,5 @@
-FROM openjdk:12
+#No se asigna puerto porque es random
+FROM openjdk:11
 VOLUME /tmp
 ADD ./target/springboot-servicio-productos-0.0.1-SNAPSHOT.jar servicio-productos.jar
 ENTRYPOINT ["java","-jar","/servicio-productos.jar"]

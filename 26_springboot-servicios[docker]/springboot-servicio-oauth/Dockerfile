@@ -1,4 +1,4 @@
-FROM openjdk:12
+FROM openjdk:11
 VOLUME /tmp
 EXPOSE 9100
 ADD ./target/springboot-servicio-oauth-0.0.1-SNAPSHOT.jar servicio-oauth.jar

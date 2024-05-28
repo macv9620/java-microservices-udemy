@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.formacionbdi.springboot.app.commons.usuarios.models.entity.Usuario;
+import com.formacionbdi.springboot.app.usuarios.commons.models.entity.Usuario;
 
 @FeignClient(name="servicio-usuarios")
 public interface UsuarioFeignClient {

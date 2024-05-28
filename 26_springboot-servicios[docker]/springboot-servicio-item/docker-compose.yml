@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  items-microservice-service:
+    image: items-microservice:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /tmp:/tmp

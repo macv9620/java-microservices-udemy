@@ -18,7 +18,7 @@ import com.formacionbdi.springboot.app.oauth.clients.UsuarioFeignClient;
 
 import feign.FeignException;
 
-import com.formacionbdi.springboot.app.commons.usuarios.models.entity.Usuario;
+import com.formacionbdi.springboot.app.usuarios.commons.models.entity.Usuario;
 
 @Service
 public class UsuarioService implements IUsuarioService, UserDetailsService {
