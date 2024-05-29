@@ -396,6 +396,16 @@
 				{
 					"name": "CreateItemZuulSpringGW",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -453,6 +463,16 @@
 				{
 					"name": "EditItemZuulSpringGW",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -734,7 +754,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:{{gatewayPort}}/api/usuarios/usuarios/2",
+							"raw": "localhost:{{gatewayPort}}/api/usuarios/usuarios/1",
 							"host": [
 								"localhost"
 							],
@@ -743,7 +763,7 @@
 								"api",
 								"usuarios",
 								"usuarios",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -822,7 +842,7 @@
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "123459",
 									"type": "text"
 								},
 								{

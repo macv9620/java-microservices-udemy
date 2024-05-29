@@ -16,5 +16,5 @@ public class RepositoryConfig implements RepositoryRestConfigurer {
 		config.exposeIdsFor(Usuario.class, Role.class);
 	}
 
-	
+
 }
