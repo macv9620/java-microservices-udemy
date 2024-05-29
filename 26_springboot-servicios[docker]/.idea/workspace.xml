@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="53f99987-febc-424b-9154-1d7340514454" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-config-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-config-server/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-eureka-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-eureka-server/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-item/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-item/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-oauth/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-oauth/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-productos/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-productos/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-usuarios/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-usuarios/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-zuul-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_F_Docker/springboot-servicio-zuul-server/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-servicio-config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-servicio-config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-servicio-oauth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-servicio-oauth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-servicio-oauth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-servicio-oauth/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-servicio-oauth/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-servicio-oauth/src/main/resources/bootstrap.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
+    {
+      &quot;name&quot;: &quot;docker-desktop&quot;
+    }
+  ],
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="docker-desktop" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2h76krYdZEf6U6cQNyZ3BHwcRy4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml.mysql-db-products-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.postgres-db-users-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.rabbitmq-server-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.zipkin-server-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.springboot-servicio-config-server-0.0.1-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-servicio-oauth [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-servicio-oauth [install] Skip Tests .executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-servicio-oauth [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SpringbootServicioConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringbootServicioItemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringbootServicioOauthApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringbootServicioProductosApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringbootServicioUsuariosApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;S14&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootServicioUsuariosApplication">
+    <configuration name="springboot-servicio-config-server-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/springboot-servicio-config-server/target/springboot-servicio-config-server-0.0.1-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="springboot-servicio-oauth [install] Skip Tests " type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+                <option value="-DskipTests" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/springboot-servicio-oauth" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringbootServicioConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.config.SpringbootServicioConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioEurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.eureka.SpringbootServicioEurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-item" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.item.SpringbootServicioItemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioOauthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-oauth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.oauth.SpringbootServicioOauthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioProductosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-productos" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.productos.SpringbootServicioProductosApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioUsuariosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-usuarios" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.usuarios.SpringbootServicioUsuariosApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootServicioZuulServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-servicio-zuul-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formacionbdi.springboot.app.zuul.SpringbootServicioZuulServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.mysql-db-products-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql-db-products-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.postgres-db-users-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgres-db-users-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.rabbitmq-server-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="rabbitmq-server-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.zipkin-server-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="zipkin-server-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.zipkin-server-service: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.rabbitmq-server-service: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.mysql-db-products-service: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.postgres-db-users-service: Compose Deployment" />
+        <item itemvalue="JAR Application.springboot-servicio-config-server-0.0.1-SNAPSHOT.jar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="53f99987-febc-424b-9154-1d7340514454" name="Changes" comment="" />
+      <created>1716932918310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716932918310</updated>
+      <workItem from="1716932920225" duration="1066000" />
+      <workItem from="1716934458205" duration="494000" />
+      <workItem from="1716934989248" duration="676000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

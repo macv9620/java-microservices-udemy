@@ -1,0 +1,196 @@
+version: '3.8'
+
+services:
+  postgres-db-users-service:
+    image: postgres:latest
+    container_name: users_db_container
+    environment:
+      POSTGRES_DB: users_db
+      POSTGRES_USER: user1
+      POSTGRES_PASSWORD: S3cureUs3rP@ssw0rd!
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - springcloud
+
+  mysql-db-products-service:
+    image: mysql:latest
+    container_name: products_db_container
+    environment:
+      MYSQL_ROOT_PASSWORD: S3cureR00tP@ssw0rd!
+      MYSQL_DATABASE: products_db
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: S3cureUs3rP@ssw0rd!
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - springcloud
+
+  mysql-db-zipkin-log-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: zipkin_db_container
+    environment:
+      MYSQL_ROOT_PASSWORD: S3cureR00tP@ssw0rd!
+      MYSQL_DATABASE: zipkin_log_db
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: S3cureUs3rP@ssw0rd!
+    ports:
+      - "3308:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks:
+      - springcloud
+
+  rabbitmq-server-service:
+    image: rabbitmq:3.13-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    container_name: rabbitmq_server_container
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    depends_on:
+      mysql-db-zipkin-log-service:
+        condition: service_healthy
+    networks:
+      - springcloud
+
+  zipkin-server-service:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    container_name: zipkin_server_container
+    restart: always
+    environment:
+      - RABBIT_ADDRESSES=rabbitmq-server-service
+      - STORAGE_TYPE=mysql
+      - MYSQL_DB=zipkin_log_db
+      - MYSQL_USER=root
+      - MYSQL_PASS=S3cureR00tP@ssw0rd!
+      - MYSQL_HOST=mysql-db-zipkin-log-service
+      - MYSQL_TCP_PORT=3306
+    #      - MYSQL_JDBC_URL=jdbc:mariadb://mysql_db_zipkin_log_service:3306/zipkin_log_db?allowPublicKeyRetrieval=true&useSSL=false
+    depends_on:
+      rabbitmq-server-service:
+        condition: service_healthy
+      mysql-db-zipkin-log-service:
+        condition: service_healthy
+    networks:
+      - springcloud
+
+  eureka-server-service:
+    image: eureka_server:1.0.0
+    build:
+      context: ./springboot-servicio-eureka-server
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    volumes:
+      - /tmp:/tmp
+    depends_on:
+      - zipkin-server-service
+    networks:
+      - springcloud
+
+  config-server-service:
+    image: config_server:1.0.0
+    build:
+      context: ./springboot-servicio-config-server
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - /tmp:/tmp
+    depends_on:
+      - eureka-server-service
+    networks:
+      - springcloud
+
+  products-microservice-service:
+    image: products_microservice:1.0.0
+    build:
+      context: ./springboot-servicio-productos
+      dockerfile: Dockerfile
+    volumes:
+      - /tmp:/tmp
+    depends_on:
+      - eureka-server-service
+      - config-server-service
+    networks:
+      - springcloud
+
+  users-microservice-service:
+    image: users_microservice:1.0.0
+    build:
+      context: ./springboot-servicio-usuarios
+      dockerfile: Dockerfile
+    volumes:
+      - /tmp:/tmp
+    depends_on:
+      - eureka-server-service
+      - config-server-service
+    networks:
+      - springcloud
+
+  oauth-microservice-service:
+    image: oauth_microservice:1.0.0
+    build:
+      context: ./springboot-servicio-oauth
+      dockerfile: Dockerfile
+    volumes:
+      - /tmp:/tmp
+    depends_on:
+      - eureka-server-service
+      - config-server-service
+    networks:
+      - springcloud
+
+  items-microservice-service:
+    image: items_microservice:1.0.0
+    build:
+      context: ./springboot-servicio-item
+      dockerfile: Dockerfile
+    volumes:
+      - /tmp:/tmp
+    depends_on:
+      - eureka-server-service
+      - config-server-service
+    networks:
+      - springcloud
+
+  zuul-microservice-service:
+    image: zuul_microservice:1.0.0
+    build:
+      context: ./springboot-servicio-zuul-server
+      dockerfile: Dockerfile
+    volumes:
+      - /tmp:/tmp
+    ports:
+      - "8090:8090"
+    depends_on:
+      - eureka-server-service
+      - config-server-service
+      - items-microservice-service
+      - products-microservice-service
+      - oauth-microservice-service
+      - users-microservice-service
+    networks:
+      - springcloud
+
+volumes:
+  postgres_data:
+  mysql_data:
+networks:
+  springcloud:

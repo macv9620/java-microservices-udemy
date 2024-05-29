@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  config-server:
+    image: config-server:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - /tmp:/tmp
